@@ -129,11 +129,10 @@ body{
         outline: 0;
         background-color: #ebfffc;
         color:#333;
-        padding: 10px 25px;
         height: 40px;
         border-radius: 30px;
         flex: 1;
-        margin-right: 16px;
+        width: 40%;
         font-size: 18px;
     }
     
