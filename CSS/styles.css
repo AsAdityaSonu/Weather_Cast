@@ -14,7 +14,7 @@ body{
 .card{
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg, #00feba, #5b548a);
+    background: linear-gradient(135deg, #39beef, #624eea);
     color: #fff;
     margin: 100px auto 0;
     border-radius: 20px;
@@ -119,4 +119,83 @@ body{
 
 .weather-unwrap {
     height: 500px; 
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    
+    .search input{
+        border:0;
+        outline: 0;
+        background-color: #ebfffc;
+        color:#333;
+        padding: 10px 25px;
+        height: 40px;
+        border-radius: 30px;
+        flex: 1;
+        margin-right: 16px;
+        font-size: 18px;
+    }
+    
+    .search button{
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    
+    .weather-icon{
+        width:130px;
+        margin-top: 30px;
+    
+    }
+    
+    .weather h1{
+        font-size: 60px;
+        font-weight: 500;
+    }
+    
+    .weather h2{
+        font-size: 30px;
+        font-weight: 400;
+        margin-top: -10px;
+    }
+    
+    .details{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+    
+    .col{
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .col img{
+        width: 40px;
+        margin: auto;
+    }
+    
+    .humidity, .wind{
+        font-size: 20px;
+        margin-top: -6px;
+
+    }
+    
+
+    .error{
+        text-align: left;
+        margin-left: 10px;
+        font-size: 10px;
+        margin-top: 10px;
+        display: none;
+    }
+    
 }
