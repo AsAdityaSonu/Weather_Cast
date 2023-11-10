@@ -108,3 +108,15 @@ body{
     margin-top: 10px;
     display: none;
 }
+
+ /* Animation */
+
+ .weather-wrapper {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s ease-out;
+}
+
+.weather-unwrap {
+    height: 500px; 
+}

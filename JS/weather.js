@@ -37,8 +37,12 @@ async function checkWeather(city){
 
         document.querySelector(".weather").style.display = "block";
         document.querySelector(".error").style.display="none";
-    }
+        
 
+        // document.querySelector('.weather-wrapper').classList.add('weather-unwrap');
+        const contentHeight = document.querySelector('.weather').scrollHeight;
+        document.querySelector('.weather-wrapper').style.height = contentHeight + 'px';
+    }
     
 }
 
