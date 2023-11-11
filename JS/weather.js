@@ -9,9 +9,13 @@ const weatherIcon = document.querySelector('.weather-icon');
 async function checkWeather(city){
     const response = await fetch(apiUrl + city + `&appid=${apikey}`);
 
-    if(response.status === 404) {
+    if (response.status === 404) {
+        console.log('City not found!');
         document.querySelector('.error').style.display = 'block';
         document.querySelector('.weather').style.display = 'none';
+
+        const contentHeight = document.querySelector('.error').scrollHeight;
+        document.querySelector('.weather-wrapper').style.height = contentHeight+10 + 'px';
     }else{
         var data = await response.json();
 

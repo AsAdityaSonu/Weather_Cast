@@ -110,6 +110,10 @@ body{
     display: none;
 }
 
+.error p{
+    font-size: 13px;
+}
+
  /* Animation */
 
  .weather-wrapper {
